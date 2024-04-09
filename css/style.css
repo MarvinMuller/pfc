@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #212529;
+  --border-color: #666;
+  --font-color: #fff;
+  --hand-grayed: #d4d4d4;
+  --button-text-gray: #999999;
+
+  --light-blue: #A9D1FF;
+  --blue:  #4169E1;
+  --light-green: #93e493;
+  --green: #32CD32;
+  --light-yellow: #f7f79e;
+  --yellow: #f8f846;
+  --light-red: #e7ad96;
+  --red: #DC143C;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+  display: block;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 0 1.5rem 2.5rem;
+  position: relative;
+}
+
+button {
+  background-color: var(--light-blue);
+  border: none;
+  border-radius: .25rem;
+  color: var(--bg-color);
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.6rem;
+  transition: .1s;
+}
+
+#setupDiv, #spotDiv {
+  display: grid;
+  gap: 0.5rem;
+  margin: .4rem .4rem;
+}
+
+#setupDiv {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+#spotDiv {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#handsDiv {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  margin: .4rem .4rem;
+}
+
+#handsDiv button {
+  background-color: var(--hand-grayed);
+  border-radius: 0;
+  border: 1px solid var(--border-color);
+  color: var(--font-color);
+  cursor: default;
+  padding: 0.3rem 0rem;
+}
+
+#handsDiv button.under6,
+.under6 {
+  background-color: var(--light-green);
+  color: var(--bg-color);
+}
+
+#handsDiv button.call,
+.call,
+#handsDiv button.under8,
+.under8,
+#spotDiv button.hero {
+  background-color: var(--green);
+  color: var(--bg-color);
+}
+
+#handsDiv button.under10,
+.under10 {
+  background-color: var(--light-blue);
+  color: var(--bg-color);
+}
+
+#handsDiv button.raise,
+.raise,
+#handsDiv button.under12,
+.under12, 
+.selectedStack  {
+  background-color: var(--blue);
+  color: var(--font-color);
+}
+
+#handsDiv button.under14,
+.under14 {
+  background-color: var(--light-yellow);
+  color: var(--bg-color);
+}
+
+#handsDiv button.call4Bet,
+.call4Bet,
+#handsDiv button.under16,
+.under16 {
+  background-color: var(--yellow);
+  color: var(--bg-color);
+}
+
+#handsDiv button.under18,
+.under18 {
+  background-color: var(--light-red);
+  color: var(--bg-color);
+}
+
+#handsDiv button.allIn,
+.allIn,
+#handsDiv button.under20,
+.under20,
+#spotDiv button.villain {
+  background-color: var(--red);
+  color: var(--font-color);
+}
+
+#setupDiv button:hover,
+#spotDiv button:hover {
+  filter: brightness(0.85);
+}
+
+table {
+  margin: 0.4rem;
+  width: 100%;
+}
+
+td {
+  padding: 0.4rem;
+}
+
+.colorCol {
+  width: 2rem;
+}
