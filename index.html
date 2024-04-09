@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <title>PFC</title>
+  <script src="./js/structure.js" defer></script>
+  <script src="./js/charts.js" defer></script>
+  <script src="./js/core.js" defer></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main>
+    <div id="setupDiv">
+      <button class="stackBtn">u20 BB</button>
+      <button class="stackBtn">u45 BB</button>
+      <button class="stackBtn">u75 BB</button>
+      <button class="stackBtn selectedStack">100 BB</button>
+      <button id="tableSizeBtn">9H</button>
+      <button id="gameModeBtn">CASH</button>
+    </div>
+    <div id="handsDiv">
+    </div>
+    <div id="spotDiv">
+      <button>UTG</button>
+      <button>EP</button>
+      <button>MP</button>
+      <button>LJ</button>
+      <button>HJ</button>
+      <button>CO</button>
+      <button>BB</button>
+      <button>SB</button>
+      <button>BTN</button>
+    </div>
+    <div id="legendDiv">
+      <table id="normalGame">
+        <colgroup>
+          <col class="colorCol">
+          <col class="actionCol">
+          <col class="colorCol">
+          <col class="actionCol">
+        </colgroup>
+        <tr>
+          <td class="allIn"></td>
+          <td>Raise until All-in</td>
+          <td class="call4Bet"></td>
+          <td>Raise and Call</td>
+        </tr>
+        <tr>
+          <td class="raise"></td>
+          <td>Raise and Fold</td>
+          <td class="call"></td>
+          <td>Call</td>
+        </tr>
+      </table>
+      <table id="pushGame" hidden>
+        <colgroup>
+          <col class="colorCol">
+          <col class="actionCol">
+          <col class="colorCol">
+          <col class="actionCol">
+        </colgroup>
+        <tr>
+          <td class="under20"></td>
+          <td>Shove under 20 BB</td>
+          <td class="under18"></td>
+          <td>Shove under 18 BB</td>
+        </tr>
+        <tr>
+          <td class="under16"></td>
+          <td>Shove under 16 BB</td>
+          <td class="under14"></td>
+          <td>Shove under 14 BB</td>
+        </tr>
+        <tr>
+          <td class="under12"></td>
+          <td>Shove under 12 BB</td>
+          <td class="under10"></td>
+          <td>Shove under 10 BB</td>
+        </tr>
+        <tr>
+          <td class="under8"></td>
+          <td>Shove under 8 BB</td>
+          <td class="under6"></td>
+          <td>Shove under 6 BB</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
