@@ -10,7 +10,7 @@ const SPOT_BUTTONS = document.querySelectorAll('#spotDiv button');
 const NORMAL_LEGEND = document.getElementById('normalGame');
 const PUSH_LEGEND = document.getElementById('pushGame');
 
-let stackSize = 100, tableSize = 9, gameMode = 'CASH', gameSpot = '';
+let stackSize = 100, tableSize = 9, gameMode = 'MTT', gameSpot = '';
 
 const PLAYING_CARDS = 'AKQJT98765432'.split('');
 const CARDS_SUIT = 'so'.split('');
